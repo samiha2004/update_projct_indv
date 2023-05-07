@@ -1,5 +1,5 @@
 # update_projct_indv
-# update_indv_project
+
 my project about your skills 
 I use html and css lang
 ![mobile](https://user-images.githubusercontent.com/131868495/236661106-f90a1d21-2fbf-496b-b9cd-1e777f4d7c9c.png)
