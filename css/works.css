@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+}
+
+:root {
+    --maincolor: #ff6464;
+}
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Heebo-Bold.ttf);
+    font-weight: bold;
+}
+
+/* start Components part  */
+.container {
+    margin: 2% 10%;
+}
+
+/* Small screens */
+@media (max-width: 767px) {}
+
+/* Medium screens */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+/* Extra-large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* end Components part  */
+/* start header */
+
+
+header .container ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+
+header .container ul a {
+    text-decoration: none;
+}
+
+header .container ul li {
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #000000;
+    font-family: Heebo;
+}
+
+header .container ul li:hover {
+    color: var(--maincolor);
+    padding-top: 5px;
+    transition: 0.2s;
+
+}
+
+header .container nav i {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    header .container {
+        display: flex;
+        justify-content: flex-end;
+
+
+    }
+
+    header .container nav ul {
+        display: none;
+    }
+
+    header .container nav i {
+        display: flex;
+    }
+
+    header .container nav {
+        position: relative;
+    }
+
+    nav .icon-menu:hover+ul {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: #f6f6f6;
+        position: absolute;
+        right: 0;
+        min-width: 200px;
+        top: calc(100% + 20px);
+        padding: 20px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-bottom: #000000 1px solid;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+    header .container nav ul::before {
+        content: "";
+        border-width: 10px;
+        border-color: transparent transparent #f6f6f6 transparent;
+        border-style: solid;
+        right: 5px;
+        position: absolute;
+        top: -19px;
+
+    }
+
+    header .container nav ul a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+
+
+}
+
+/* end header */
+
+
+
+
+/* start  severaldiv */
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 10%;
+}
+
+.lastdiv .severaldiv {
+    margin: 20px 10%;
+}
+
+.severaldiv {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10PX;
+
+}
+
+.severaldiv p {
+    padding-bottom: 20px;
+    line-height: 1.6;
+    width: 80%;
+
+}
+
+.severaldiv .centerdiv {
+    display: flex;
+    padding-top: 10px;
+    width: 50%;
+
+}
+
+.severaldiv .centerdiv span {
+    background-color: #21243D;
+    color: white;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    height: 25px;
+    padding: 5px 10px;
+
+}
+
+.severaldiv .centerdiv p {
+    color: #8695A4;
+    padding-top: 0;
+}
+
+@media (max-width:767px) {
+    .lastdiv .severaldiv {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+
+    .lastdiv .severaldiv .leftsev img {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .lastdiv .severaldiv .rightseve {
+        width: 100%;
+    }
+}
+
+/* end  severaldiv */
+/* statr footer */
+footer div {
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+
+}
+
+i {
+    font-size: 199%;
+    padding-bottom: 20px;
+    padding-top: 83px;
+    padding-left: 20px;
+}
+
+footer p {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* end footer */
